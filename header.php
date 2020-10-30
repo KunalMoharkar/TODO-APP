@@ -9,9 +9,13 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--Fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Stylesheets-->
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/utils.css">
+        <link rel="stylesheet" href="css/dashboard.css">
 
         <script>
             function openNav() {
@@ -36,8 +40,8 @@
       
         <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#">Home</a>
-        <a href="#">Dashboard</a>
+        <a href="/SW-A1/home.php">Home</a>
+        <a href="/SW-A1/dashboard.php">Dashboard</a>
         <a href="#">Login</a>
         <a href="#">Register</a>
         </div>

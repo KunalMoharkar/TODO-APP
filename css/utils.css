@@ -1,0 +1,22 @@
+.todo-button{
+    color:white;
+    font-size: 20px;
+    background-color: #067F77;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 3px 3px 3px 3px;
+    border: none;
+    border-radius: 25px;
+    transition-duration: 700ms;
+
+}
+
+.todo-button:focus{
+    outline:none;
+}
+
+.todo-button:hover{
+    background-color:#04625B;
+}
