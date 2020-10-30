@@ -20,3 +20,7 @@
 .todo-button:hover{
     background-color:#04625B;
 }
+
+input[type="text"]{
+    border: 3px solid red;
+}

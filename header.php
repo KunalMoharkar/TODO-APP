@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="css/home.css">
         <link rel="stylesheet" href="css/utils.css">
         <link rel="stylesheet" href="css/dashboard.css">
+        <link rel="stylesheet" href="css/login.css">
+
 
         <script>
             function openNav() {
@@ -42,6 +44,6 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="/SW-A1/home.php">Home</a>
         <a href="/SW-A1/dashboard.php">Dashboard</a>
-        <a href="#">Login</a>
+        <a href="/SW-A1/login.php">Login</a>
         <a href="#">Register</a>
         </div>

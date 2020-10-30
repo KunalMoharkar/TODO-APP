@@ -2,19 +2,19 @@
 <div class="container">
     <div class="control">
         <div class="add-btn">
-            <i class="fa fa-plus fa-plus-custom" aria-hidden="true"></i>
+            <a href="/SW-A1/addtodo.php" ><i class="fa fa-plus fa-plus-custom" aria-hidden="true"></i></a>
         </div>    
         <div class="stats">
             <button class="todo-button">Total: 12</button>
             <button class="todo-button">Done: 4</button>
-            <button class="todo-button">Favoutite: 3</button>
+            <button class="todo-button">Star: 3</button>
         </div>
     </div>
     <div class="dashboard-container">
         <div class="todo-card">
             <div class="todo-header">
                 <h4>Title</h4>
-                <a href="#">modify</a>
+                <a href="/SW-A1/modifytodo.php">modify</a>
             </div>
             <div class="todo-footer">
                 <div>
