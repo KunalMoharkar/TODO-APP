@@ -1,3 +1,4 @@
+<?php session_start()?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,16 +35,20 @@
         <!--Navigation Bar-->
         <div class="navbar" id="main">
             <button class="openbtn" onclick="openNav()">☰</button>  
-            <div class="nav-sessions">
-                <p>Hello, Kunal</p>
-                <button href="#">Logout</button>
-        </div>
+            <?php if($_SESSION["username"]):?>
+                <div class="nav-sessions">
+                    <p>Hello, Kunal</p>
+                    <a href="/SW-A1/logout.php"><button >Logout</button></a>
+                </div>
+            <?php endif;?>
         </div>
       
         <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="/SW-A1/home.php">Home</a>
-        <a href="/SW-A1/dashboard.php">Dashboard</a>
+        <?php if($_SESSION["username"]):?>
+            <a href="/SW-A1/dashboard.php">Dashboard</a>
+        <?php endif;?>
         <a href="/SW-A1/login.php">Login</a>
         <a href="#">Register</a>
         </div>
