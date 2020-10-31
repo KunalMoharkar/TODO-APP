@@ -40,7 +40,7 @@ $result = $conn->query($sql);
         <div class="todo-card">
             <div class="todo-header">
                 <h6><?php echo $row['title']?></h6>
-                <a href="/SW-A1/modifytodo.php" style="margin-left:20px;">modify</a>
+                <a href=<?php echo "/SW-A1/modifytodo.php?todo_id=".$row['id']; ?> style="margin-left:20px;">modify</a>
             </div>
             <div class="todo-footer">
                 <div>
