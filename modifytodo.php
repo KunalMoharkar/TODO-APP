@@ -46,7 +46,7 @@ while($row = $result->fetch_assoc())
                 </div>
                 <div class="form-footer">
                     <button class="todo-button" type="submit">Update</button>
-                    <button class="todo-button" style="background-color:#9C1B35;" type="submit">Delete</button>
+                    <a href=<?php echo"/SW-A1/deletetodo-script.php?todo_id=".$id;?> class="todo-button" style="background-color:#9C1B35;">Delete</a>
                 </div>
             </form>
         </div>
