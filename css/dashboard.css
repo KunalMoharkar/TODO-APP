@@ -76,10 +76,6 @@
     box-shadow: 2px 2px 5px black;
 }
 
-.todo-header a{
-    margin: 0px;
-    padding: 0px;
-}
 
 .todo-footer,.todo-header{
     display: flex;

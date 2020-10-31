@@ -37,7 +37,7 @@
             <button class="openbtn" onclick="openNav()">☰</button>  
             <?php if($_SESSION["username"]):?>
                 <div class="nav-sessions">
-                    <p>Hello, Kunal</p>
+                    <p>Hello, <?php echo $_SESSION["username"];?></p>
                     <a href="/SW-A1/logout.php"><button >Logout</button></a>
                 </div>
             <?php endif;?>

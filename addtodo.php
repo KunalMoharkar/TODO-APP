@@ -1,15 +1,15 @@
 <?php require('header.php');?>
     <div class="forms-pageContainer">
         <div class="form-container">
-            <form>
+            <form action="/SW-A1/addtodo-script.php" method="POST">
                 <div class="form-body"> 
                     <div>
                         <label for="title">Title :</label>
-                        <input type="text" name="title" />
+                        <input type="text" name="title" required/>
                     </div>
                     <div>
                         <label for="description">Description :</label>
-                        <input type="text" name="description" />
+                        <input type="text" name="description" required/>
                     </div>
                     <div>
                         <label for="due">Due date:</label>

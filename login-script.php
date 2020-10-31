@@ -9,19 +9,19 @@
     $sql = "SELECT * FROM user WHERE username = '{$username}' AND password = '{$password}' ";
     $result = $conn->query($sql);
 
-    
-    
     if ($result->num_rows === 0) {
         
         header("Location: /SW-A1/error.php"); 
         exit;
     } 
 
-    $row = $result->fetch_assoc();
-    $_SESSION['username'] = $row['username'];
-    $_SESSION['user_id'] = $row['id'];
+    while($row = $result->fetch_assoc())
+    {  
+      $_SESSION['id'] = $row['id'];
+      $_SESSION['username'] = $row['username']; //set sessions
+    }
     $conn->close();
-    header("Location: /SW-A1/home.php"); 
+    header("Location: /SW-A1/dashboard.php"); 
     exit;
 
 ?>
