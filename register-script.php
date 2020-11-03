@@ -1,10 +1,17 @@
 <?php require('conf.php');?>
 
     <?php
+
+    if(!(isset($_POST['username'])&&isset($_POST['password'])&&isset($_POST['email'])))
+    {
+        header("Location: /SW-A1/error.php"); 
+        exit;
+    }
+
     
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password = md5($_POST['password']); //hash password
 
     $sql = "INSERT INTO user (username, email, password)
             VALUES (?, ?, ?)";
@@ -19,6 +26,7 @@
     } 
     
     $conn->close();
+
     header("Location: /SW-A1/login.php"); 
     exit;
 

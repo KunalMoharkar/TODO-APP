@@ -3,6 +3,11 @@
 
     <?php
     
+    if(!(isset($_SESSION['username'])))
+    {
+        header("Location: /SW-A1/error.php"); 
+        exit;
+    }
     
     $sql = "UPDATE todo SET title=?,description=?,due_date=?,status=?,is_fav=? WHERE id=?";
     $stmt= $conn->prepare($sql);
@@ -33,17 +38,14 @@
         $is_fav = 0;
     }
 
-    
-
-    echo $title;
-    echo $description;
-    echo $due_date;
-    echo $status;
-    echo $is_fav;
-    echo $id;
-
    
-    $stmt->execute();
+    if(!($stmt->execute()))
+    {
+        $conn->close();
+        header("Location: /SW-A1/error.php"); 
+        exit;
+        
+    }
     $conn->close();
     header("Location: /SW-A1/dashboard.php"); 
     exit;

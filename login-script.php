@@ -2,9 +2,16 @@
 <?php require('conf.php');?>
 
     <?php
+    //handle errors
+    if(!(isset($_POST['username'])&&isset($_POST['password'])))
+    {
+      header("Location: /SW-A1/error.php"); 
+      exit;
+  
+    }
     
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = md5($_POST['password']); //hashed password
 
     $sql = "SELECT * FROM user WHERE username = '{$username}' AND password = '{$password}' ";
     $result = $conn->query($sql);
